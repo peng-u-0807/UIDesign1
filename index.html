@@ -84,7 +84,6 @@
   <script>
     document.addEventListener("keydown", function(event) {
       if (event.isComposing) return;
-      console.log("key pressed");
       if (event.key.toUpperCase() === "E") {
         const house = document.getElementById("exterior");
         house.style.visibility = house.style.visibility === "visible" ? "hidden" : "visible";
