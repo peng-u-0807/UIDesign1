@@ -4,35 +4,75 @@
 	box-sizing: border-box;
 }
 
-/* adjusting fonts */
-
 body {
 	font-family: -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
 	transition: background 500ms ease;
 }
 
-p, li {
-	font-size:  22px;
+.row {
+	display: flex;
+}
+  
+.column {
+	flex: 50%;
+}
+
+h1 {
+	margin-top: 18px;
+	margin-bottom: 8px;
+}
+
+p {
+	font-size: 18px;
 	line-height: 30px;
 }
 
-/* adjusting spacing */
-
-#left-column {
-	padding: 20px;
+li {
+	font-size: 17px;
+	line-height: 30px;
 }
 
-h1, p {
-	margin-bottom:  20px;
-}
-
-ul, ol {
-	margin-left: 20px;
+article {
+	margin-bottom: 16px;
 }
 
 img {
 	max-width: 100%;
-	height:  auto;
+	height: auto;
+}
+
+/* Change hyperlink color */
+a {
+	color: #3A3A3A;
+}
+
+a:visited {
+	color: #3A3A3A;
+}
+
+/* Custom style */
+#left-column {
+	padding: 20px;
+}
+
+#detail {
+	margin-bottom: 12px;
+	color: gray;
+}
+
+#house-intro {
+	margin-block-start: 24px;
+	margin-block-end: 24px;
+}
+
+#exterior {
+	visibility: hidden;
+	margin-top: 52px;
+}
+
+#interior {
+	visibility: hidden;
+	margin-top: 16px;
 }
 
 /* uncomment the code below to set the grid */

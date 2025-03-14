@@ -5,27 +5,94 @@
 <head>
   <title>Yoorim Choi | UI Design Programming 1</title>
   <meta charset="utf-8" />
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
-
-  <!-- this is where my code is-->
   <div id="grid">
     <div id="left-column" class="scroll">  
 
-      <!-- my favorite pokemon -->
-      <!-- <img src="https://archives.bulbagarden.net/media/upload/2/24/Spr_2c_054.png" alt="Psyduck" /> -->
+      <!-- image -->
+      <img src="https://penguin-highway.com/chara/img/img_penguin.jpg" loading="lazy" alt="Penguin" />
 
       <!-- about me-->
       <h1>Yoorim Choi</h1>  
-      <p class="desc">A short paragraph about you...</p>
-      <ul>
-        <li>My favorite food is ...</li>
-        <li>My favorite song is...</li>
-        <li>My favorite website is <a href="">Craigslist</a></li>
-      </ul>
-
+      <p id="detail">
+        Currently interested in iOS development & Mobile UX/UI design
+      </p>
+      <article>
+        <li>💻 <a href="https://github.com/peng-u-0807">Github Profile</a></li>
+        <li>📮 <a href="mailTo:peng.u.0807@gmail.com">peng.u.0807@gmail.com</a></li>
+      </article>
+      <hr>
+      <div class="row">
+        <div class="column">
+          <p id="house-intro">
+            <h4>
+              Press <kbd>E</kbd> to view my exterior ASCII house
+            </h4>
+            <pre id="exterior">
+      *            .         *       .     
+              .           .               .  
+         .         *           .   ╔¤══════¤╗
+    *                  .           ║ YooRim ║
+            .    (o_        .   (o_╚¤╦═════¤╝
+       .  (o_    //\     (o_    //\ /      *
+          (/)_   U_/_    (/)_   U_/_    .
+    ·º·º·º·º·º·º·º·º·º·º·º·º·º·º·º·º·º·º·º·º·
+  º·º·º·º·º·º·º·º·º·º·º·º·º·º·º·º·º·º·º·º·º·º·º·
+  ╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦
+  §                                            §
+  §      ╔ öÔö ╗                               §
+  §      ║     ║                               §
+  §~ï~~ï~║     ║~ï~~ï~~ï~~ï~~ï~~ï~~ï~~ï~~ï~~ï~~§
+  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+            </pre>
+          </p>
+        </div>
+        <div class="column">
+          <p id="house-intro">
+            <h4>
+              Press <kbd>I</kbd> to view my interior ASCII house
+            </h4>
+            <pre id="interior">
+  ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+      l   L   l   L   l   L   l   L   l   L   l   L   l
+      ö   ö   ö   ö   ö   ö   ö   ö   ö   ö   ö   ö   ö
+                  
+                  
+                  
+                  ╔══════════▄▄▄▄══════════╗
+                  ║ >peng/~                ║
+        §         ║ localhost:08826        ║
+          §       ║ >cd                    ║
+     _/¯¯¯¯\_     ║ 2025-ui-design-prog    ║
+     ┼±±±±±±┼ ----║                        ║---------
+     │  @@  │     ╚════════════════════════╝           
+     ├------┤     \\ ▀ ▀ ▀ ▀ ▀ ▀ ▀ ▀ ▀ ▀ ▀  \
+     │COFFEE│      \\ ▀ ▀ ▀ ▀ ▀ ▀ ▀ ▀ ▀ ▀ ▀  \
+      \____/        \\       \¯¯¯¯¯¯¯¯¯\      \
+                     \\_______\_________\______\
+                  
+  TABLETABLETABLETABLETABLETABLETABLETABLETABLETABLETABLETABLE
+            </pre>
+          </p>
+        </div>
+      </div>
     </div>
   </div>
+  <script>
+    document.addEventListener("keydown", function(event) {
+      if (event.isComposing) return;
+      console.log("key pressed");
+      if (event.key.toUpperCase() === "E") {
+        const house = document.getElementById("exterior");
+        house.style.visibility = house.style.visibility === "visible" ? "hidden" : "visible";
+      } else if (event.key.toUpperCase() === "I") {
+        const house = document.getElementById("interior");
+        house.style.visibility = house.style.visibility === "visible" ? "hidden" : "visible";
+      }
+    });
+</script>
 </body>
 </html>
