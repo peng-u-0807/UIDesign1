@@ -1,0 +1,201 @@
+body {
+	background: #D6CCBA;
+}
+
+#parent {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+#chopstick-back {
+	width: 280px;
+	height: 8px;
+	background-color: #e6d5c0;
+	border-radius: 2px;
+	position: absolute;
+	top: 148px;
+	left: -20px;
+	z-index: 5;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	transform: rotate(-4deg);
+}
+
+#chopstick-front {
+	width: 280px;
+	height: 8px;
+	background-color: #aea498;
+	border-radius: 2px;
+	position: absolute;
+	top: 154px;
+	left: -16px;
+	z-index: 5;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	transform: rotate(-4deg);
+}
+
+#ramen-lid {
+	width: 140px;
+	height: 40px;
+	background-color: #d9d9d9;
+	border-radius: 60px / 20px;
+	position: absolute;
+	left: 50px;
+	top: 135px;
+	z-index: 4;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#ramen {
+	width: 100px;
+	height: 200px;
+	border-style: solid;
+	border-width: 160px 20px 0 20px;
+	border-color: #ad0712 transparent transparent transparent;
+	position: absolute;
+	left: 50px;
+	top: 150px;
+	z-index: 3;
+	margin-top: auto;
+	margin-bottom: 20px;
+	/* rounded corner */
+	border-top-left-radius: 50% 8px;
+	border-top-right-radius: 50% 8px;
+	border-bottom-left-radius: 50% 8px;
+	border-bottom-right-radius: 50% 8px;
+	overflow: hidden;
+}
+
+#ramen::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 189px;
+	width: 100%;
+	height: 20px;
+	background-color: #ad0712;
+	border-radius: 50%;
+	z-index: -1;
+}
+
+#ramen-shadow {
+	width: 160px;
+	height: 20px;
+	background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.5) 0%, transparent 80%);
+	border-radius: 50%;
+	position: absolute;
+	left: 20px;
+	top: 300px;
+	z-index: 1;
+}
+
+#pocari {
+	width: 100px;
+	height: 240px;
+	background: #005EBA;
+	background: 
+		linear-gradient(
+			270deg, 
+			rgba(255, 255, 255, 0.20) 0%, 
+			rgba(255, 255, 255, 0.00) 9.35%), 
+		linear-gradient(
+			180deg, 
+			rgba(0, 0, 0, 0.00) 50.13%, 
+			rgba(0, 0, 0, 0.60) 100%), 
+		linear-gradient(
+			270deg, 
+			rgba(19, 42, 107, 0.20) 0%, 
+			rgba(12, 32, 86, 0.60) 42.99%, 
+			rgba(12, 32, 86, 0.60) 72.26%, 
+			rgba(19, 42, 107, 0.40) 100%), 
+		#005EBA;
+	position: absolute;
+	writing-mode: vertical-rl;
+    text-align: left;
+	z-index: 1;
+	left: 200px;
+	top: 40px;
+	margin-top: auto;
+	margin-bottom: 20px;
+	overflow: hidden;
+	position: relative;
+	/* rounded corner */
+	border-top-left-radius: 50% 4px;
+	border-top-right-radius: 50% 4px;
+	border-bottom-left-radius: 50% 4px;
+	border-bottom-right-radius: 50% 4px;
+}
+
+#pocari::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(
+		270deg,
+		rgba(19, 42, 107, 0.20) 0%,
+		rgba(12, 32, 86, 0.60) 42.99%,
+		rgba(12, 32, 86, 0.60) 72.26%,
+		rgba(19, 42, 107, 0.40) 100%
+	);
+	z-index: 2;
+	pointer-events: none;
+}
+
+/* lid */
+#pocari::after {
+	content: "";
+	position: absolute;
+	top: -4px;
+	left: 0;
+	width: 100%;
+	height: 12px;
+	background: #999999;
+	border-radius: 50%;
+	z-index: 3;
+}
+
+.pocari-text {
+	padding-top: 22px;
+	line-height: 90%;
+    font-weight: bold;
+	font-size: 32pt;
+	letter-spacing: 9pt;
+	transform: translateX(-40px);
+	color: white;
+	z-index: 1;
+	position: relative;
+}
+
+.pocari-subtext {
+	padding-top: 24px;
+	font-weight: regular;
+	font-size: 5pt;
+	letter-spacing: 2pt;
+	transform: translateX(48px);
+	color: white;
+	z-index: 1;
+	position: relative;
+}
+
+#apple {
+	width: 132px;
+	height: 132px;
+	background: linear-gradient(244deg, #FFF 1.61%, rgba(255, 255, 255, 0.00) 19.11%), linear-gradient(180deg, rgba(71, 17, 17, 0.00) 36.61%, rgba(71, 17, 17, 0.30) 100%), radial-gradient(75.94% 75.94% at 70.23% 29.6%, #F6D355 0%, #D58546 16.99%, #B53838 50.29%, #5A1F1F 73.49%, #292B23 88.74%, #332B1D 100%);
+	border-radius: 39% 28% 44% 40% / 36% 41% 54% 58%;
+	position: absolute;
+	left: 180px;
+	top: 170px;
+	z-index: 2;
+	margin-bottom: 20px;
+}
+
+#apple-shadow {
+	width: 120px;
+	height: 20px;
+	background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.5) 0%, transparent 80%);
+	border-radius: 50%;
+	position: absolute;
+	left: 172px;
+	top: 285px;
+	z-index: 1;
+}
