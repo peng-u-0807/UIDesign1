@@ -6,7 +6,7 @@
 
 body {
 	font-family: -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
-	transition: background 500ms ease;
+	transition: 500ms ease;
 }
 
 .row {
@@ -33,6 +33,7 @@ li {
 }
 
 article {
+	margin-top: 12px;
 	margin-bottom: 16px;
 }
 
@@ -61,18 +62,20 @@ a:visited {
 }
 
 #house-intro {
-	margin-block-start: 24px;
-	margin-block-end: 24px;
+	margin-block-start: 16px;
+	margin-block-end: 16px;
 }
 
 #exterior {
 	visibility: hidden;
 	margin-top: 52px;
+	margin-bottom: 52px;
 }
 
 #interior {
 	visibility: hidden;
 	margin-top: 52px;
+	margin-bottom: 52px;
 }
 
 /* uncomment the code below to set the grid */
